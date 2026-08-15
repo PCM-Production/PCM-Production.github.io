@@ -1,1 +1,209 @@
+/* PCM Productions - deliberately old-school web design */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 20px 10px;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #101820 0px,
+            #101820 2px,
+            #121c25 2px,
+            #121c25 4px
+        );
+    color: #d8e7f0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+.page {
+    width: 820px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #162b3a;
+    border: 4px ridge #9bb4c4;
+    box-shadow: 0 0 0 3px #071018, 8px 8px 0 #05090c;
+}
+
+header {
+    text-align: center;
+    padding: 22px 10px 18px;
+    background: linear-gradient(#294e68, #102637);
+    border-bottom: 3px double #a9c7d8;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000000;
+}
+
+.tagline {
+    margin-top: 8px;
+    color: #ffd84d;
+    font-size: 17px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background: #071018;
+    border-bottom: 2px solid #66869a;
+    font-weight: bold;
+}
+
+nav a,
+a {
+    color: #69c7ff;
+    text-decoration: underline;
+}
+
+nav a:hover,
+a:hover {
+    color: #fff36b;
+    background: #164b69;
+}
+
+nav span {
+    color: #8ba4b4;
+    margin: 0 8px;
+}
+
+.notice {
+    margin: 14px;
+    padding: 8px;
+    text-align: center;
+    color: #111;
+    background: #ffd84d;
+    border: 3px outset #fff0a8;
+    font-weight: bold;
+}
+
+main {
+    padding: 10px 22px 25px;
+}
+
+section {
+    padding: 5px 0 12px;
+}
+
+h2 {
+    color: #ffd84d;
+    font-size: 23px;
+    border-bottom: 2px dotted #66869a;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.game-box {
+    display: flex;
+    gap: 20px;
+    padding: 12px;
+    background: #0c1b26;
+    border: 3px ridge #7695a8;
+}
+
+.game-image {
+    width: 300px;
+    min-width: 300px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #05090c;
+    border: 3px inset #7695a8;
+    color: #708896;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.status {
+    color: #72ff72;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #111;
+    background: #ffd84d;
+    border: 3px outset #fff0a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:active {
+    border-style: inset;
+}
+
+hr {
+    border: 0;
+    border-top: 2px dashed #66869a;
+    margin: 20px 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    background: #071018;
+    border-top: 3px double #a9c7d8;
+}
+
+.tiny {
+    color: #8297a5;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 5px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .game-box {
+        flex-direction: column;
+    }
+
+    .game-image {
+        width: 100%;
+        min-width: 0;
+    }
+
+    nav span {
+        margin: 0 2px;
+    }
+}
 
